@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <RootNamespace>emptyExample</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>CloudChamberDiaries</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs2010\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs2010\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_debug</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTextInputField\src;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxXmlSettings\libs;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxXmlSettings\src;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTween\src\Easings;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTween\src;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTimeline\src;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTimeline\libs\sndfile\win32\lib;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTimeline\libs\sndfile\win32\include;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTimeline\libs\sndfile\win32\include\AL;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxTimeline\assets;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxRange\src;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxAssimpModelLoader\libs\assimp\include\Compiler;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxAssimpModelLoader\libs\assimp\include;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010;C:\Users\snuk\Documents\OF\of_v0071_vs2010_release\addons\ofxAssimpModelLoader\;%(AdditionalIncludeDirectories);src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_debugInfo.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTimeline.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLColors.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLElement.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLElementHeader.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLEvents.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLImageSequence.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLImageSequenceFrame.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLKeyframer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLPage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLPageTabs.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLSwitcher.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLTicker.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLTrigger.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLVideoPlayer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLVideoThumb.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTimeline\src\ofxTLZoomer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasing.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingBack.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingBounce.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingCirc.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingCubic.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingElastic.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingExpo.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingLinear.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuad.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuart.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuint.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingSine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxTween\src\ofxTween.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="src\Interactor.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Particle.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiAnim.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiAssert.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiCamera.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiColor4D.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiConfig.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiDefines.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiFileIO.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiLight.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMaterial.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix3x3.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix4x4.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMesh.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiPostProcess.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiQuaternion.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiScene.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiTexture.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiTypes.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiVector2D.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiVector3D.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiVersion.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\Compiler\poppack1.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\Compiler\pushpack1.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\DefaultLogger.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\IOStream.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\IOSystem.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\Logger.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\LogStream.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\NullLogger.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\ProgressHandler.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofx3DBaseLoader.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
+    <ClInclude Include="..\..\..\addons\ofxRange\src\ofRange.h" />
+    <ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTimeline.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLColors.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLElement.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLElementHeader.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLEvents.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLImageSequence.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLImageSequenceFrame.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLKeyframer.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLPage.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLPageTabs.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLSwitcher.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLTicker.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLTrigger.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLVideoPlayer.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLVideoThumb.h" />
+    <ClInclude Include="..\..\..\addons\ofxTimeline\src\ofxTLZoomer.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasing.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingBack.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingBounce.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingCirc.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingCubic.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingElastic.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingExpo.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingLinear.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuad.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuart.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingQuint.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\Easings\ofxEasingSine.h" />
+    <ClInclude Include="..\..\..\addons\ofxTween\src\ofxTween.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="src\Interactor.h" />
+    <ClInclude Include="src\Particle.h" />
+    <ClInclude Include="src\testApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiColor4D.inl" />
+    <None Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMaterial.inl" />
+    <None Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix3x3.inl" />
+    <None Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix4x4.inl" />
+    <None Include="..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\aiVector3D.inl" />
+    <None Include="..\..\..\addons\ofxTimeline\assets\defaultColors.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
